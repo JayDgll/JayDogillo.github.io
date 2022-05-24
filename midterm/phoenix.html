@@ -9,7 +9,7 @@
     window.onload = function() {
         AFRAME.registerComponent('event-listener', {
             init: function () {
-                this.audio = document.querySelector("#roar");
+                this.audio = document.querySelector("#Phoenix Roars");
 
                 this.el.addEventListener('click', function (e) {
 		
@@ -72,7 +72,7 @@
         rotation="0 0 0" 
       >
       </a-entity>
-      <a-sound src="#roar" autoplay="false"></a-sound>
+      <a-sound src="#Phoenix Roars" autoplay="false"></a-sound>
       <a-entity cursor="rayOrigin:mouse"></a-entity>
       <a-entity cursor="fuse: true; fuseTimeout: 500"></a-entity>
     </a-scene>
