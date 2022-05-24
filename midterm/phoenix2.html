@@ -36,7 +36,7 @@
                 }.bind(this));
                 this.el.addEventListener('touchstart', function (e) {
 		
-                    let dragon = document.querySelector('#dragon-model')
+                    let dragon = document.querySelector('#phoenix-model')
 		    dragon.setAttribute('animation-mixer', "clip: Scene; loop: once;");
                     this.audio.play();
 			console.log(e)
@@ -49,8 +49,8 @@
 		
                 this.el.addEventListener('animation-finished', function (e) {
 			 console.log(e)
-                    let dragon = document.querySelector('#dragon-model')
-		    dragon.removeAttribute('animation-mixer');
+                    let phoenix = document.querySelector('#phoenix-model')
+		    phoenix.removeAttribute('animation-mixer');
                 }.bind(this));
 		
             }
