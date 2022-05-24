@@ -9,7 +9,7 @@
     window.onload = function() {
         AFRAME.registerComponent('event-listener', {
             init: function () {
-                this.audio = document.querySelector("#Phoenix Roar");
+                this.audio = document.querySelector("#Phoenix Roars");
 
                 this.el.addEventListener('click', function (e) {
 		
@@ -63,7 +63,7 @@
     <a-scene renderer="colorManagement: true">
        <a-assets>
         <a-asset-item id="phoenix" response-type="arraybuffer" src="./phoenix.glb"></a-asset-item>
-        <audio id="Phoenix Roar" src="./Phoenix Roar.mp3"></audio>
+        <audio id="Phoenix Roars" src="./Phoenix Roars.mp3"></audio>
       </a-assets>
       <a-entity event-listener id="phoenix-model"  
         gltf-model="#phoenix" 
@@ -72,7 +72,7 @@
         rotation="0 0 0" 
       >
       </a-entity>
-      <a-sound src="#Phoenix Roar" autoplay="false"></a-sound>
+      <a-sound src="#Phoenix Roars" autoplay="false"></a-sound>
       <a-entity cursor="rayOrigin:mouse"></a-entity>
       <a-entity cursor="fuse: true; fuseTimeout: 500"></a-entity>
     </a-scene>
