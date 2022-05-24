@@ -14,7 +14,7 @@
                 this.el.addEventListener('click', function (e) {
 		
                     let phoenix = document.querySelector('#phoenix-model')
-		    phoenix.setAttribute('animation-mixer', "clip: Take 001; loop: repeat;");
+		    phoenix.setAttribute('animation-mixer', "clip: Take 001; loop: once;");
                     this.audio.play();
 			
                   console.log(e)
@@ -30,7 +30,7 @@
 		 
 		
                 this.el.addEventListener('touchmove', function (e) {
-                    //this.audio.play();
+                    this.audio.play();
 			
                   console.log(e)
                 }.bind(this));
@@ -73,7 +73,7 @@
 		
       >
       </a-entity>
-      <a-sound src="#Phoenix Roars" autoplay="true"></a-sound>
+      <a-sound src="#Phoenix Roars" autoplay="false"></a-sound>
       <a-entity cursor="rayOrigin:mouse"></a-entity>
       <a-entity cursor="fuse: true; fuseTimeout: 500"></a-entity>
     </a-scene>
