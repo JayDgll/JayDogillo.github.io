@@ -37,7 +37,7 @@
                 this.el.addEventListener('touchstart', function (e) {
 		
                     let phoenix = document.querySelector('#phoenix-model')
-		    phoenix.setAttribute('animation-mixer', "clip: Scene; loop: once;");
+		    phoenix.setAttribute('animation-mixer', "clip: Take 001; loop: once;");
                     this.audio.play();
 			console.log(e)
                 }.bind(this));
@@ -68,7 +68,7 @@
       <a-entity event-listener id="phoenix-model"  
         gltf-model="#phoenix" 
         scale=".50 .50 .50" 
-        position = "0 0 -50" 
+        position = "0 0 -10" 
         rotation="0 0 0" 
 		
       >
