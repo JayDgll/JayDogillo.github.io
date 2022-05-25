@@ -12,6 +12,7 @@
                 this.audio = document.querySelector("#Phoenix Roars");
 
                 this.el.addEventListener('click', function (e) {
+			this.audio.play();
 		
                     let phoenix = document.querySelector('#phoenix-model')
 		    phoenix.setAttribute('animation-mixer', "clip: Take 001; loop: repeat;");
